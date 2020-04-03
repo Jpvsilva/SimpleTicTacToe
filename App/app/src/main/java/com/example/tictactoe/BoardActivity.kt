@@ -1,6 +1,7 @@
 package com.example.tictactoe
 
 import android.app.AlertDialog
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
@@ -13,7 +14,7 @@ class BoardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.board)
+        setContentView(R.layout.board2)
         showAlertDialogButtonClicked("Choose your Character")
         boardButtonListener()
         val playerView = findViewById<TextView>(R.id.winnerView)
@@ -61,6 +62,8 @@ class BoardActivity : AppCompatActivity() {
         val layoutParams: LinearLayout.LayoutParams =
             btnPositive.layoutParams as LinearLayout.LayoutParams
         layoutParams.weight = 10F
+        btnPositive.setTextColor(Color.parseColor("#000000"))
+        btnNegative.setTextColor(Color.parseColor("#000000"))
         btnPositive.layoutParams = layoutParams
         btnNegative.layoutParams = layoutParams
     }
@@ -103,6 +106,8 @@ class BoardActivity : AppCompatActivity() {
         val layoutParams:LinearLayout.LayoutParams =
             btnPositive.layoutParams as LinearLayout.LayoutParams
         layoutParams.weight = 10F
+        btnPositive.setTextColor(Color.parseColor("#000000"))
+        btnNegative.setTextColor(Color.parseColor("#000000"))
         btnPositive.layoutParams = layoutParams
         btnNegative.layoutParams = layoutParams
     }

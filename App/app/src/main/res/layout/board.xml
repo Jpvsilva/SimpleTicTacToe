@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00168E">
+    android:background="#002C73">
 
     <TextView
         android:id="@+id/welcome2"
@@ -124,18 +124,18 @@
 
         <TextView
             android:id="@+id/line1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/holo_orange_light"
             android:fontFamily="@font/allerta"
-            android:text="@string/lineString"
             android:textColor="@android:color/holo_orange_light"
             android:textIsSelectable="false"
-            android:textSize="12sp"
+            android:textSize="8sp"
             app:layout_constraintBottom_toTopOf="@+id/secondLineLayout"
             app:layout_constraintEnd_toEndOf="@+id/firstLineLayout"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/firstLineLayout" />
 
